@@ -1,9 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 128 128">
-    <path d="M50.4 78.5a75.1 75.1 0 0 0-28.5 6.9l24.2-65.7c.7-2 1.9-3.2 3.4-3.2h29c1.5 0 2.7 1.2 3.4 3.2l24.2 65.7s-11.6-7-28.5-7L67 45.5c-.4-1.7-1.6-2.8-2.9-2.8-1.3 0-2.5 1.1-2.9 2.7L50.4 78.5Zm-1.1 28.2Zm-4.2-20.2c-2 6.6-.6 15.8 4.2 20.2a17.5 17.5 0 0 1 .2-.7 5.5 5.5 0 0 1 5.7-4.5c2.8.1 4.3 1.5 4.7 4.7.2 1.1.2 2.3.2 3.5v.4c0 2.7.7 5.2 2.2 7.4a13 13 0 0 0 5.7 4.9v-.3l-.2-.3c-1.8-5.6-.5-9.5 4.4-12.8l1.5-1a73 73 0 0 0 3.2-2.2 16 16 0 0 0 6.8-11.4c.3-2 .1-4-.6-6l-.8.6-1.6 1a37 37 0 0 1-22.4 2.7c-5-.7-9.7-2-13.2-6.2Z" />
-    <style>
-        path { fill: #000; }
-        @media (prefers-color-scheme: dark) {
-            path { fill: #FFF; }
-        }
-    </style>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="SG galaxy orbit favicon">
+  <defs>
+    <clipPath id="circleClip">
+      <circle cx="256" cy="256" r="230"/>
+    </clipPath>
+  </defs>
+
+  <!-- transparent canvas, circular icon -->
+  <circle cx="256" cy="256" r="230" fill="#061A33"/>
+
+  <g clip-path="url(#circleClip)">
+    <!-- subtle inner depth, still flat-looking -->
+    <circle cx="256" cy="256" r="210" fill="#082044" opacity="0.55"/>
+
+    <!-- orbit rings -->
+    <ellipse cx="256" cy="256" rx="178" ry="150" transform="rotate(-22 256 256)"
+             fill="none" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round"
+             stroke-dasharray="290 165" stroke-dashoffset="22"/>
+    <ellipse cx="256" cy="256" rx="176" ry="148" transform="rotate(-22 256 256)"
+             fill="none" stroke="#2EA8FF" stroke-width="12" stroke-linecap="round"
+             stroke-dasharray="130 345" stroke-dashoffset="-170"/>
+
+    <!-- SG monogram -->
+    <text x="214" y="298" text-anchor="middle"
+          font-family="Inter, Arial, Helvetica, sans-serif" font-size="142" font-weight="800"
+          fill="#FFFFFF" letter-spacing="-10">S</text>
+    <text x="304" y="305" text-anchor="middle"
+          font-family="Inter, Arial, Helvetica, sans-serif" font-size="132" font-weight="800"
+          fill="#2EA8FF" letter-spacing="-12">G</text>
+
+    <!-- orbit dot -->
+    <circle cx="370" cy="167" r="28" fill="#2EA8FF"/>
+
+    <!-- simple star accent -->
+    <path d="M121 344 L132 372 L160 383 L132 394 L121 422 L110 394 L82 383 L110 372 Z" fill="#FFFFFF"/>
+  </g>
 </svg>
